@@ -1,3 +1,4 @@
+
 /* Global Styles */
 body {
     background-color: #080808; /* Main background color */
@@ -24,35 +25,62 @@ body {
 }
 
 /* Navbar Styles */
-#navbar {
-    background-color: black; /* Navbar background color */
+
+/* Navbar Styling */
+.navbar {
+    padding: 15px 20px; /* Add padding to the navbar */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+#brand {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    color: #00ffee;
+    font-weight: bold;
 }
 
 .navbar-nav .nav-link {
-    color: black !important; /* Navbar text color */
-    position: relative;
+    color: black; /* Set default color for links */
+    font-size: 1rem;
+    padding: 10px 15px;
 }
 
-/* Active navbar link and hover styles */
-.navbar-nav .nav-link:hover,
-.navbar-nav .nav-link.active {
-    color: var(--main-color);
+.navbar-nav .nav-link:hover {
+    color: #00ffee; /* Highlight color on hover */
 }
 
-.navbar-nav .nav-link.active::after,
-.navbar-nav .nav-link:hover::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: black; /* Underline color */
+.navbar-toggler {
+    border-color: #00ffee; /* Customize the border of the toggle button */
 }
 
-/* Remove underline from non-active links */
-.navbar-nav .nav-link:not(.active):hover::after {
-    width: 0;
+.navbar-toggler-icon {
+    background-color: #00ffee; /* Customize the hamburger icon color */
+}
+
+/* Mobile and Tablet View - Navbar adjustments */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center; /* Center the links */
+    }
+
+    .navbar-nav .nav-item {
+        padding: 10px 0; /* Add space between the items */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1.2rem;
+        color: black;
+    }
+
+    .navbar-brand {
+        font-size: 1.5rem;
+        color: #00ffee; /* Adjust size and color for mobile */
+    }
+}
+
+/* Navbar behavior when scrolling */
+body {
+    padding-top: 100px; /* Ensure the content doesn't hide behind the navbar */
 }
 
 /* Section Styles (Home, Projects, Tools, Contact) */
