@@ -184,4 +184,11 @@ button:hover {
 html, body {
     width: 100%;
     overflow-x: hidden; /* Prevent horizontal overflow */
+
+    
 }
+
+#landing {
+    padding-top: 120px; /* Adjust this value according to your navbar height */
+}
+
