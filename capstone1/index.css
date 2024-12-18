@@ -5,6 +5,7 @@ body {
     font-family: 'Montserrat', sans-serif; /* Font family */
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* Hide horizontal overflow */
 }
 
 /* Main color for accents */
@@ -173,4 +174,14 @@ button:hover {
     .col-md-3, .col-md-6 {
         max-width: 100%;
     }
+}
+
+/* Prevent horizontal scrolling for all screens */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal overflow */
 }
